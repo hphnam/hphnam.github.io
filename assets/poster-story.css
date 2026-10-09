@@ -1,0 +1,118 @@
+/* The placement case inherits the original poster's amber ink, glass panels,
+   pint cut-out, brewery workflow, native charts and five-rung model ladder. */
+.poster-story{--poster-gold:#E5A83D;--poster-dgold:#865A11;--poster-ruby:#C0392B;--poster-muted:#5C5C58;--poster-rule:#e8e5db;font-family:Inter,'Be Vietnam Pro',sans-serif;position:relative}
+.poster-story h1,.poster-story h2,.poster-story h3{font-family:'Bricolage Grotesque','Bricolage Grotesque',sans-serif;font-style:normal;letter-spacing:-.035em}
+.poster-story h2{font-size:clamp(2rem,3.6vw,3.55rem);line-height:1.14;color:#111;margin:12px 0 22px}
+.poster-story h3{font-size:clamp(1.35rem,2.1vw,1.9rem);line-height:1.25;margin:12px 0 20px}
+.poster-story p,.poster-story li,.poster-story dd{font-size:1rem;line-height:1.8}
+.poster-story p+p{margin-top:18px}
+.poster-story em{color:var(--poster-dgold);font-style:normal}
+.poster-label{display:block;font-family:'Bricolage Grotesque','Bricolage Grotesque',sans-serif;font-weight:600;font-size:.875rem;color:var(--poster-dgold);letter-spacing:.08em;text-transform:uppercase}
+.poster-cover{position:relative;padding:35px 42px 32px;margin:24px 0 50px;border-radius:30px;background:radial-gradient(ellipse at 84% 56%,#f5d4869e,transparent 42%),linear-gradient(120deg,#fffdf6,#f6f5ef);border:1px solid #eee9dd;overflow:hidden;isolation:isolate}
+.poster-cover>*{position:relative;z-index:2}
+.poster-partners{display:flex;align-items:center;gap:34px;padding-bottom:26px;margin-bottom:36px;border-bottom:1px solid #d9d5c8}
+.poster-university{display:flex;align-items:center;gap:12px;max-width:330px}
+.poster-university>img{width:170px;height:65px;object-fit:contain;mix-blend-mode:multiply}
+.poster-university>span{font-size:.75rem;line-height:1.45;color:#333;max-width:155px}
+.poster-university .university-name{font-family:Georgia,serif;font-size:1.5rem;font-weight:700}
+.poster-lune{width:80px;height:66px;object-fit:contain}
+.poster-aigm{font-family:Inter,sans-serif;font-size:1.65rem;font-weight:800;letter-spacing:-.055em;color:#111;line-height:1}
+.poster-aigm small{display:block;font-size:.75rem;font-weight:500;letter-spacing:0;line-height:1.4;margin-top:8px}
+.poster-title{max-width:78%;padding-right:40px}
+.poster-title .eyebrow{font-size:.875rem;line-height:1.6;max-width:550px}
+.poster-story .poster-cover h1{font-size:clamp(2.7rem,5.1vw,5.3rem);line-height:1.12;max-width:900px;color:#111;font-weight:700;letter-spacing:-.055em;margin:22px 0 24px}
+.poster-title h1 em{color:var(--poster-ruby)}
+.poster-deck{max-width:650px!important;font-size:1.125rem!important;line-height:1.7!important}
+.poster-deck strong{color:var(--poster-dgold)}
+.poster-cover .poster-pint{position:absolute;right:-24px;top:150px;width:32%;height:calc(100% - 170px);object-fit:contain;object-position:right bottom;z-index:1;pointer-events:none}
+.poster-byline{font-size:.875rem;padding-top:24px;max-width:76%}
+.poster-byline p{font-size:.875rem;line-height:1.6}.poster-byline p+p{margin-top:10px}
+.poster-panel{padding:34px;border-radius:26px;border:1px solid var(--poster-rule);background:linear-gradient(150deg,#fffffff2,#fffdf7e8);box-shadow:inset 0 1px #fff,0 7px 24px #33291b08;min-width:0}
+.poster-panel-heading{max-width:920px}
+.poster-workflow{padding:38px 34px 30px;background:radial-gradient(ellipse at 35% 48%,#e5a83d20,transparent 55%),radial-gradient(ellipse at 88% 45%,#2f9c960b,transparent 46%),#fbfbf8}
+.poster-pipeline-art{position:relative;margin:20px -18px 8px}
+.poster-pipeline-art>img{display:block;width:100%;height:auto;aspect-ratio:2171/724;object-fit:contain}
+
+
+.poster-stages{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;padding:24px 0 0;margin:0;border-top:1px solid var(--poster-rule)}
+.poster-stages li{padding:0;margin:0;min-width:0}
+.poster-stages li>span{display:block;font-weight:700;font-size:.875rem;color:var(--poster-dgold)}
+.poster-stages h3{font-size:1rem;line-height:1.5;letter-spacing:-.02em;margin:10px 0}
+.poster-stages p{font-size:.875rem;line-height:1.7}
+.poster-gap{display:grid;grid-template-columns:1.35fr 1fr;gap:34px;margin:52px 0}
+.poster-gap .poster-figure{align-self:center;margin:0}
+.poster-scope{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--poster-rule);padding-top:28px;gap:22px}
+.poster-scope strong{display:block;font-family:'Bricolage Grotesque','Bricolage Grotesque',sans-serif;font-size:2.8rem;line-height:1.2;color:var(--poster-dgold);letter-spacing:-.04em}
+.poster-scope span{display:block;margin-top:7px;font-size:.875rem;color:var(--poster-muted)}
+.poster-section{margin:64px 0}
+.poster-section-heading{margin-bottom:30px;max-width:1000px}
+.poster-two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.poster-two-col>.poster-panel{display:flex;flex-direction:column}
+.poster-figure{margin:20px 0 22px}
+.poster-figure img,.poster-chart{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+.poster-figure figcaption,.poster-caption{font-size:.875rem!important;line-height:1.7!important;color:var(--poster-muted);margin-top:14px}
+.poster-insight{color:var(--poster-dgold);font-weight:600;border-top:1px solid var(--poster-rule);padding-top:20px;margin-top:22px!important}
+.poster-heat{display:grid;grid-template-columns:minmax(90px,1.8fr) repeat(7,minmax(0,1fr));gap:3px;margin:22px 0 10px;font-size:.8125rem;font-variant-numeric:tabular-nums}
+.poster-heat>span{display:flex;justify-content:center;align-items:center;height:33px;border-radius:3px;font-weight:600;min-width:0}
+.poster-heat>span.v{justify-content:flex-start;font-size:.8125rem;padding-right:3px}.poster-heat>span.d{height:22px;color:var(--poster-muted)}
+.poster-heat .ruby{color:var(--poster-ruby)}
+.poster-input-ledger{margin:12px 0 0}
+.poster-input-ledger>div{border-top:1px solid var(--poster-rule);padding:16px 0}
+.poster-input-ledger dt{font-size:1rem;font-weight:700;line-height:1.5}
+.poster-input-ledger dd{margin:5px 0 0;color:var(--poster-muted);font-size:.9375rem}
+.poster-input-ledger .not-fed dt{color:var(--poster-ruby)}
+.poster-models{margin:56px 0}
+.poster-table-scroll{overflow-x:auto;max-width:100%;border:1px solid var(--poster-rule);border-radius:12px;margin-top:26px;background:#fff;overscroll-behavior-x:contain}
+.poster-model-table{width:100%;min-width:820px;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.875rem;line-height:1.5}
+.poster-model-table caption{text-align:left;padding:16px 20px;color:var(--poster-dgold);font-weight:700;background:#fcf8eb}
+.poster-model-table th{font-weight:700;color:#333;text-align:right;padding:10px 14px;border-bottom:1px solid #dedacb;background:#f8f7f2}
+.poster-model-table td{padding:12px 14px;text-align:right;border-bottom:1px solid #ece9df;white-space:nowrap}
+.poster-model-table td:first-child,.poster-model-table th:first-child{text-align:left;white-space:normal;min-width:270px}
+.poster-model-table .v{text-align:center;color:var(--poster-dgold)}
+.poster-model-table .rn{display:inline-flex;width:23px;justify-content:center;margin-right:9px;background:#f3edda;border-radius:4px;font-weight:700;color:var(--poster-dgold)}
+.poster-model-table .keep{font-weight:700}.poster-model-table .served{background:#fae5b0;color:#5f4105}
+.poster-model-table tbody tr:last-child td{border-bottom:0}
+.poster-method-notes{border-top:1px solid var(--poster-rule);margin-top:25px;padding-top:20px;gap:36px}
+.poster-method-notes h3{font-size:1.2rem;margin-bottom:12px}
+.poster-findings{list-style:none;padding:0;margin:0}
+.poster-findings li{padding:18px 0;border-top:1px solid var(--poster-rule)}
+.poster-findings li:first-child{padding-top:0;border-top:0}
+.poster-findings strong{display:block;color:var(--poster-dgold);margin-bottom:5px}
+.poster-pilot-number{display:flex;align-items:center;gap:24px;margin:22px 0 24px}
+.poster-pilot-number>strong{font-family:'Bricolage Grotesque','Bricolage Grotesque',sans-serif;font-size:4.5rem;line-height:1;color:var(--poster-dgold);letter-spacing:-.06em}
+.poster-pilot-number>strong>span{font-size:2.2rem;color:var(--poster-muted);letter-spacing:-.02em}
+.poster-pilot-number>p{font-size:.9375rem;line-height:1.5}
+.poster-pilot-bar{display:flex;height:20px;border-radius:6px;overflow:hidden;gap:3px}
+.poster-pilot-bar .wanted{width:77.5%;background:#111}.poster-pilot-bar .unwanted{width:15%;background:var(--poster-ruby)}.poster-pilot-bar .uncertain{width:7.5%;background:#ddd8ca;border:1px solid #7e7b70}
+.poster-calibration-fix{margin-top:24px;display:grid;grid-template-columns:1fr auto;column-gap:30px;background:linear-gradient(120deg,#fff7df,#fffdf9)}
+.poster-calibration-fix h3{max-width:600px}.poster-calibration-fix>p{grid-column:1/-1;margin-top:12px}
+.poster-fix-number{font-family:'Bricolage Grotesque','Bricolage Grotesque',sans-serif;align-self:center;font-size:3.5rem;font-weight:700;letter-spacing:-.06em;color:var(--poster-dgold);white-space:nowrap}
+.poster-fix-number span{font-family:Inter,sans-serif;font-weight:400;font-size:1rem;letter-spacing:0;color:var(--poster-muted)}
+.poster-conclusion{margin:60px 0 45px;background:radial-gradient(ellipse at 100% 100%,#e5a83d38,transparent 68%),#fffaf0;padding:42px}
+.poster-conclusion>p{max-width:850px}.poster-conclusion h2{font-size:clamp(2.25rem,4.2vw,4.2rem);line-height:1.18}
+@media(min-width:1500px){}
+@media(max-width:1050px){.poster-title{max-width:82%}.poster-story .poster-cover h1{font-size:4.2rem}.poster-cover .poster-pint{width:28%;right:-25px}.poster-stages{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.poster-gap{grid-template-columns:1fr 1fr}.poster-university{max-width:300px}.poster-university>img{width:145px}.poster-partners{gap:24px}.poster-heat{grid-template-columns:82px repeat(7,minmax(0,1fr));font-size:.75rem}.poster-panel{padding:28px}.poster-heat>span.v{font-size:.75rem}}
+@media(max-width:800px){.poster-cover{padding:28px}.poster-partners{flex-wrap:wrap;gap:24px;margin-bottom:24px}.poster-university{max-width:none}.poster-university>img{width:145px}.poster-university>span{font-size:.75rem}.poster-story .poster-cover h1{font-size:3.55rem}.poster-title{max-width:85%;padding-right:20px}.poster-cover .poster-pint{width:29%;right:-24px;top:220px;height:calc(100% - 245px)}.poster-byline{max-width:80%}.poster-two-col{grid-template-columns:1fr}.poster-gap{grid-template-columns:1fr;gap:20px}.poster-gap .poster-figure{max-width:580px}.poster-scope{grid-template-columns:repeat(4,1fr)}.poster-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.poster-method-notes{gap:18px}.poster-heat{grid-template-columns:minmax(96px,1.8fr) repeat(7,minmax(0,1fr));font-size:.875rem}.poster-heat>span.v{font-size:.875rem}.poster-workflow{padding:28px}.poster-calibration-fix{grid-template-columns:1fr}.poster-fix-number{margin-bottom:10px}.poster-calibration-fix>p{grid-column:1}.poster-conclusion{padding:30px}}
+@media(max-width:560px){.poster-cover{padding:22px 20px 280px;border-radius:20px;margin-top:20px}.poster-partners{gap:18px;padding-bottom:20px}.poster-university{flex:1 0 100%;gap:12px}.poster-university>img{width:135px;height:48px}.poster-lune{width:65px;height:52px}.poster-aigm{font-size:1.4rem}.poster-aigm small{font-size:.75rem}.poster-title{max-width:100%;padding:0}.poster-story .poster-cover h1{font-size:clamp(2.5rem,8.8vw,3.5rem);letter-spacing:-.045em;margin:18px 0 20px;line-height:1.15}.poster-deck{font-size:1rem!important}.poster-cover .poster-pint{top:auto;bottom:-28px;right:8%;height:280px;width:65%;object-position:center bottom}.poster-byline{max-width:100%;padding-top:20px}.poster-byline p{font-size:.8125rem}.poster-panel{padding:24px 20px;border-radius:20px}.poster-story h2{font-size:2.2rem;line-height:1.18}.poster-story h3{font-size:1.45rem}.poster-story p,.poster-story li{font-size:1rem;line-height:1.8}.poster-stages{grid-template-columns:1fr;gap:0;padding-top:14px}.poster-stages li{padding:18px 0;border-bottom:1px solid var(--poster-rule)}.poster-stages li:last-child{border-bottom:0}.poster-stages h3{font-size:1.05rem;line-height:1.5;margin:7px 0}.poster-stages p{font-size:.9375rem}.poster-pipeline-art{margin:20px -8px 10px}.poster-gap{margin:38px 0}.poster-scope{grid-template-columns:repeat(2,1fr);gap:25px;padding-top:22px}.poster-scope strong{font-size:2.7rem}.poster-section{margin:44px 0}.poster-section-heading{margin-bottom:22px}.poster-two-col{gap:20px}.poster-models{margin:40px 0}.poster-heat{grid-template-columns:85px repeat(7,minmax(0,1fr));gap:2px;font-size:.75rem}.poster-heat>span.v{font-size:.75rem}.poster-heat>span{height:30px}.poster-figure{margin:20px 0}.poster-pilot-number{gap:18px}.poster-pilot-number>strong{font-size:3.8rem}.poster-pilot-number>strong>span{font-size:1.9rem}.poster-conclusion{padding:26px 20px;margin-top:42px}.poster-conclusion h2{font-size:2.45rem}.poster-fix-number{font-size:3rem}}
+
+.poster-aigm{display:flex;align-items:center;gap:10px}.poster-aigm>img{display:block;width:38px;height:38px;object-fit:contain}
+
+/* Official poster components. Artwork is copied only from the supplied package. */
+.poster-story .locks{display:flex;align-items:center;gap:28px;min-width:0}
+.poster-story .locks>img:first-child{width:370px;height:80px;object-fit:contain}
+.poster-story .locks>img:nth-of-type(2){width:110px;height:80px;object-fit:contain}
+.poster-story .lock-div{width:1px;height:55px;background:#d9d5c8}
+.poster-story .aigm-lock{display:flex;align-items:center;gap:12px;font-family:'Bricolage Grotesque',Inter,sans-serif;font-size:1.5rem;font-weight:600;white-space:nowrap}
+.poster-story .aigm-lock img{width:54px;height:54px;object-fit:contain}
+.poster-story .poster-cover .t1,.poster-story .poster-cover .t2{display:block}
+.poster-story .poster-cover .em{color:#C0392B}
+.poster-story .official-workflow>.heroslot{display:block;width:100%;height:auto;aspect-ratio:2123/489;overflow:visible}
+@media(max-width:800px){.poster-story .locks{flex-wrap:wrap;gap:22px}.poster-story .locks>img:first-child{width:220px;height:70px}.poster-story .lock-div{display:none}}
+@media(max-width:560px){.poster-story .locks>img:first-child{width:100%;max-width:245px}.poster-story .locks>img:nth-of-type(2){width:95px;height:65px}.poster-story .aigm-lock{font-size:1.25rem}.poster-story .aigm-lock img{width:44px;height:44px}}
+
+/* Poster backdrop restored without baked-in boxes; full poster preview retained. */
+.poster-story{background:#fff}
+.poster-story .poster-cover,.poster-story .poster-workflow,.poster-story .poster-panel,.poster-story .poster-conclusion,.poster-story .poster-calibration-fix{background:transparent}
+.project-visual:has(.official-poster-thumb),.work-image:has(.official-poster-thumb){position:relative;aspect-ratio:841/594!important;overflow:hidden;padding:0!important;background:transparent!important}
+.official-poster-thumb{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.official-poster-thumb img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none}

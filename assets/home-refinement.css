@@ -1,0 +1,59 @@
+/* Traditional reliefs anchor the work without competing with its reading order. */
+.things-made-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,320px);align-items:center;gap:48px;margin-bottom:28px}
+.things-made-intro .minor-heading{display:block}
+.things-made-intro .minor-heading>p:last-child{margin-top:20px;font-size:1.125rem}
+.heritage-drum{margin:0;justify-self:end;width:100%;max-width:320px}
+.heritage-drum img{display:block;width:100%;height:auto;filter:drop-shadow(0 16px 18px #00000018)}
+.quick-piece[href="#/case-study/cs-beauty-now"]>span,.quick-piece[href="#/case-study/cs-let-them-spill-it"]>span{font-size:clamp(1.1rem,2.4vw,2.65rem)}
+.agency-pop{transition:width .3s cubic-bezier(.16,1,.3,1)}
+.agency-mark{transition:transform .28s cubic-bezier(.16,1,.3,1),opacity .2s}
+.contact-channels{display:flex;flex-wrap:wrap;gap:14px 30px;margin:24px 0 40px;position:relative;z-index:2;font-size:1.125rem}
+.contact-channels a{color:var(--indigo);text-decoration:underline;text-underline-offset:5px}
+.contact-channels a:hover{color:var(--ink)}
+.hero-actions{flex-wrap:wrap}
+@media(max-width:700px){.things-made-intro{grid-template-columns:1fr 180px;gap:16px}.heritage-drum{max-width:180px}.things-made-intro .minor-heading>p:last-child{font-size:1rem}.contact-channels{font-size:1rem}.hero-actions{gap:18px}}
+@media(max-width:420px){.things-made-intro{grid-template-columns:1fr 145px;gap:12px}.heritage-drum{max-width:145px}}
+@media(prefers-reduced-motion:reduce){.agency-pop,.agency-mark{transition:none}}
+
+.hero-drum.hero-bridge{--art-width:1.8em;width:var(--art-width);height:.82em;vertical-align:-.13em;margin:0 .025em}
+.hero-drum.hero-bridge img{object-fit:contain;width:100%;height:100%}
+.screen-art img{filter:saturate(.86)}
+@media(max-width:700px){.hero-drum.hero-bridge{--art-width:1.5em;height:.76em;vertical-align:-.12em}}
+
+/* A crafted clasp belongs to the screen, rather than sitting over it as a card. */
+.entrance-cover .entrance-control{top:50%;bottom:auto;left:50%;transform:translate(-50%,-50%);opacity:clamp(0,calc(1 - var(--latch-open,0)*1.8),1);z-index:8}
+.entrance-cover .crafted-latch{position:relative;display:block;width:clamp(120px,10vw,160px);height:clamp(120px,10vw,160px);padding:0;border:0;border-radius:50%;background:transparent;box-shadow:none;cursor:pointer;filter:drop-shadow(0 6px 5px #24160d50);transition:transform .5s cubic-bezier(.16,1,.3,1),filter .4s}
+.entrance-cover .crafted-latch:hover{background:transparent;transform:rotate(-7deg) scale(1.04);filter:drop-shadow(0 10px 10px #24160d55)}
+.entrance-cover .crafted-latch:focus-visible{outline:3px solid #b98a34;outline-offset:7px;transform:rotate(-7deg) scale(1.04)}
+.entrance-cover .crafted-latch>span{display:block;position:absolute;inset:0}
+.latch-art{pointer-events:none}
+.latch-art img{display:block;width:100%;height:100%;object-fit:contain}
+.entrance-cover.is-unlocking .crafted-latch{transform:rotate(-18deg) scale(.96)}
+.entrance-cover .crafted-latch .latch-label{display:grid;place-items:center;pointer-events:none;font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:700;letter-spacing:.03em;padding-left:.03em;transform:scaleX(.72);color:#43341f;text-shadow:0 1px 1px #fff1cc,0 -1px 1px #72572d60;opacity:calc(1 - var(--latch-open,0)*3)}
+.entrance-scroll-hint{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);margin:0;display:flex;align-items:center;flex-direction:column;gap:10px;font-family:Georgia,'Times New Roman',serif;font-size:14px;letter-spacing:.055em;color:#f6e3b9;text-shadow:0 1px 3px #151628,0 0 8px #151628;pointer-events:none}
+.entrance-scroll-hint::after{content:'';display:block;width:1px;height:26px;background:linear-gradient(transparent,#f6e3b9);transform-origin:top;animation:scroll-engraving 2.8s ease-in-out infinite}
+@keyframes scroll-engraving{0%,100%{transform:translateY(0) scaleY(.65);opacity:.45}55%{transform:translateY(5px) scaleY(1);opacity:1}}
+.motion-paused .entrance-scroll-hint::after{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.entrance-scroll-hint::after{animation:none}}
+.hero-origin{font-family:var(--display);font-size:clamp(1.2rem,2.5vw,2.25rem);font-weight:500;line-height:1.35;letter-spacing:-.025em;margin:0 0 20px;position:relative;z-index:3}
+.hero-origin strong{font-weight:650;color:var(--indigo)}
+.hero-copy h1{font-size:clamp(4rem,8vw,8rem)}
+.heritage-drum img{animation:drum-turn 32s linear infinite;animation-play-state:paused;transform-origin:50% 50%}
+.heritage-drum.craft-in-view img{animation-play-state:running}
+@keyframes drum-turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+/* Co-op's cyan/coral palette, a single croissant, and a large playful brand mark. */
+.coop-croissant-preview{background:#00a1cc;color:#072c39;container-type:inline-size}
+.coop-croissant-preview .coop-logo-chip{position:absolute;top:6%;left:7%;width:28%;aspect-ratio:1.22;background:white;border-radius:25%;display:grid;place-items:center;rotate:-7deg;z-index:3;box-shadow:0 8px 0 #007f9f50;animation:coop-mark-rock 5s ease-in-out infinite;animation-play-state:paused}
+.coop-logo-chip img{width:72%!important;height:72%!important;object-fit:contain!important;padding:0!important;filter:none!important}
+.coop-croissant-preview .coop-preview-title{left:7%;top:41%;width:65%;font-size:clamp(1.5rem,8.5cqw,4.5rem);font-weight:750;line-height:.96;letter-spacing:-.055em;z-index:2}
+.coop-croissant-preview .coop-preview-subtitle{left:7%;bottom:7%;color:#073341;font-size:clamp(.875rem,2.8cqw,1.125rem);font-weight:600;z-index:3}
+.coop-croissant{position:absolute;right:-9%;top:9%;width:68%;height:82%;z-index:1;rotate:-19deg;animation:croissant-float 6s ease-in-out infinite;animation-play-state:paused}
+.coop-croissant img{width:100%;height:100%;object-fit:contain;padding:0!important;filter:drop-shadow(0 18px 9px #003c4c45)}
+.coop-croissant-preview::after{content:'';position:absolute;right:0;bottom:0;width:31%;height:9%;background:#f14f57;border-radius:40px 0 0 0;z-index:0}
+.coop-croissant-preview.craft-in-view .coop-croissant,.coop-croissant-preview.craft-in-view .coop-logo-chip{animation-play-state:running}
+@keyframes croissant-float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(4deg)}}
+@keyframes coop-mark-rock{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(4deg) translateY(-3px)}}
+.motion-paused .heritage-drum img,.motion-paused .coop-croissant,.motion-paused .coop-logo-chip{animation-play-state:paused!important}
+@media(max-width:700px){.hero-origin{font-size:1.2rem;margin-bottom:20px}.hero-copy h1{font-size:9.5vw;line-height:1.08}.coop-croissant-preview .coop-preview-title{font-size:8.5cqw}}
+@media(prefers-reduced-motion:reduce){.heritage-drum img,.coop-croissant,.coop-logo-chip{animation:none!important}.entrance-cover .crafted-latch{transition:none!important}.entrance-cover .crafted-latch:is(:hover,:focus-visible){transform:none}}
+@media(max-width:560px){.hero-copy h1{font-size:8.7vw}}
