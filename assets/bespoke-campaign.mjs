@@ -10,7 +10,7 @@ export function startBespoke(root){
   function syncPlayback(){
     const active=location.hash==='#/case-study/cs-beauty-now';
     all('[data-bespoke-youtube]').forEach(frame=>{
-      if(active&&!frame.getAttribute('src'))frame.setAttribute('src',videoEmbedUrl(frame.dataset.bespokeYoutube));
+      if(active)frame.setAttribute('data-inview-src',videoEmbedUrl(frame.dataset.bespokeYoutube));
       else if(!active)frame.removeAttribute('src');
     });
     if(!active)films.forEach(video=>video.pause());
