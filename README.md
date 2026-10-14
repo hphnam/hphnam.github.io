@@ -19,7 +19,7 @@ Create the same public repository. Extract this ZIP first; uploading the ZIP its
 
 Replace changed files in the repository, commit, and push. GitHub Pages republishes from `main` automatically after setup.
 
-This is the portfolio snapshot published on 9 October 2026, including the smaller crafted latch, scroll hint, and current case-study media. No build command, paid service, or server is required. Navigation uses hash routes, so the case-study links work with static hosting.
+This is the finished portfolio snapshot synced on 14 October 2026 from published version 43, including nine case studies, campaign media, client logos, the navy and red interface palette, and the interactive strengths DNA and bridge. Raw report downloads and source archives are excluded from this GitHub Pages copy. No build command, paid service, or server is required. Navigation uses hash routes, so the case-study links work with static hosting.
 
 The original ChatGPT-hosted portfolio remains separate; future edits there must be copied into this repository to update the GitHub version.
 

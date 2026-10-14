@@ -1,0 +1,27 @@
+/* A small floating surface lets page content show around and through the nav. */
+html{scroll-padding-top:100px}
+body{padding-top:94px}
+.site-header.glass-nav{position:fixed;inset:16px auto auto 50%;transform:translateX(-50%);width:min(760px,calc(100% - 40px));height:64px;margin:0;padding:8px 14px;gap:18px;border:1px solid #ffffffa6;border-radius:999px;background:linear-gradient(155deg,#ffffff9e,#f6f8fc70);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:0 8px 28px #24344d0c,0 2px 7px #24344d08,inset 0 1px 0 #ffffffed,inset 0 -1px 0 #ffffff57;color:#253449;z-index:70;isolation:isolate;transition:width .3s ease,height .3s ease,top .3s ease,background .3s ease,box-shadow .3s ease}
+.glass-nav::before{content:'';position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(175deg,#fff5,transparent 38%,transparent 68%,#e5ebf626);box-shadow:inset 1px 0 0 #ffffff73,inset -1px 0 0 #ffffff42;z-index:0}
+.glass-nav>*{position:relative;z-index:1}
+.site-header.glass-nav.is-scrolled{top:12px;width:min(680px,calc(100% - 40px));height:56px;padding-block:5px;background:linear-gradient(155deg,#ffffff8f,#f4f7fc6b);box-shadow:0 7px 24px #24344d10,0 1px 5px #24344d08,inset 0 1px 0 #ffffffd6,inset 0 -1px 0 #ffffff52}
+.site-header.glass-nav .wordmark{font-size:1.6rem;letter-spacing:-.075em;width:44px;min-height:44px;flex-shrink:0;justify-content:center;border-radius:50%;color:var(--red,#ad392c)}
+.site-header.glass-nav nav{display:flex;gap:4px;align-items:center}
+.site-header.glass-nav nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 15px;border:1px solid transparent;border-radius:999px;font-size:.8rem;font-weight:500;line-height:1.2;color:#33445d;transition:background .2s,color .2s,border-color .2s}
+.site-header.glass-nav nav a:hover{background:#ffffff7a;color:#153bc5}
+.site-header.glass-nav nav a[aria-current=page]{background:#ffffffad;color:#193cbd;border-color:#ffffffc2;box-shadow:0 1px 5px #263c6407,inset 0 1px 0 #fff}
+.site-header.glass-nav nav a[aria-current=page]::after{display:none}
+.site-header.glass-nav .header-contact,.site-header.glass-nav .menu-toggle{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #ffffffbf;background:#ffffff63;color:#193cbd;font-size:.78rem;font-weight:500;line-height:1.2;white-space:nowrap;transition:background .2s,border-color .2s}
+.site-header.glass-nav .header-contact:hover,.site-header.glass-nav .menu-toggle:hover{background:#ffffffe6;border-color:#fff}
+.site-header.glass-nav .menu-toggle{display:none}
+.glass-nav :is(a,button):focus-visible,.glass-menu a:focus-visible{outline:2px solid #193cbd;outline-offset:2px}
+.mobile-nav.glass-menu{position:fixed;inset:88px auto auto 50%;transform:translateX(-50%);width:min(360px,calc(100% - 32px));max-height:calc(100svh - 110px);overflow:auto;z-index:69;padding:12px;gap:5px;border:1px solid #ffffffbd;border-radius:26px;background:linear-gradient(155deg,#ffffffe0,#f3f6fcca);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);box-shadow:0 12px 32px #24344d13,inset 0 1px 0 #fff;font-family:var(--body);font-size:.95rem;color:#263953}
+.glass-menu a{min-height:44px;display:flex;align-items:center;padding:10px 18px;border-radius:16px}
+.glass-menu a:hover,.glass-menu a[aria-current=page]{background:#ffffffd1;color:#193cbd}
+@media(min-width:601px){.mobile-nav.glass-menu{display:none!important}}
+@media(max-width:600px){body{padding-top:84px}.site-header.glass-nav,.site-header.glass-nav.is-scrolled{top:10px;width:calc(100% - 24px);height:56px;padding:5px 8px;gap:6px}.site-header.glass-nav nav{display:none}.site-header.glass-nav .wordmark{margin-right:auto;font-size:1.5rem}.site-header.glass-nav .menu-toggle{display:inline-flex;padding-inline:14px}.site-header.glass-nav .header-contact{display:inline-flex;padding-inline:14px}.site-header.glass-nav .menu-toggle[aria-expanded=true]{background:#ffffffdb;color:#253449}.mobile-nav.glass-menu{top:76px;width:calc(100% - 24px)}}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.site-header.glass-nav,.site-header.glass-nav.is-scrolled{background:#f8faffed}.mobile-nav.glass-menu{background:#f8fafff5}}
+@media(prefers-reduced-transparency:reduce){.site-header.glass-nav,.site-header.glass-nav.is-scrolled,.mobile-nav.glass-menu{background:#f8fafff2;-webkit-backdrop-filter:none;backdrop-filter:none}}
+@media(prefers-contrast:more){.site-header.glass-nav,.site-header.glass-nav.is-scrolled,.mobile-nav.glass-menu{background:#f8fafff2;border-color:#65718a}.site-header.glass-nav nav a,.site-header.glass-nav .header-contact{color:#16243c}}
+@media(prefers-reduced-motion:reduce){.site-header.glass-nav,.glass-nav a,.glass-nav button{transition:none}}
+.motion-paused .site-header.glass-nav,.motion-paused .glass-nav a,.motion-paused .glass-nav button{transition:none}

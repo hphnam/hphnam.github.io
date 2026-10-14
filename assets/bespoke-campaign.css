@@ -127,6 +127,8 @@
 .bespoke-native-player video{display:block;width:100%;height:100%;object-fit:contain}
 .bespoke-native-player .bespoke-direct-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:76px;height:76px;border-radius:50%;border:1px solid #fff;background:#fffef9ed;color:var(--bespoke-navy);box-shadow:0 3px 26px #0003;font-size:1.4rem}
 .bespoke-direct-play span{margin-left:4px}
+.bespoke-video-status{position:absolute;inset:auto 12px 58px;padding:12px 15px;background:#fffef9f2;color:var(--bespoke-navy);font-size:12px;line-height:1.5;border-radius:4px;pointer-events:none}
+.bespoke-video-status[hidden]{display:none}
 .bespoke-native-player .bespoke-direct-play:hover{background:white;box-shadow:0 3px 30px #0006}
 .bespoke-native-player .bespoke-direct-play[hidden]{display:none}
 .bespoke-pinned-film figcaption{margin-top:22px}

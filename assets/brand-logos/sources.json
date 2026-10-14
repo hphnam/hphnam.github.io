@@ -1,0 +1,132 @@
+[
+  {
+    "file": "techcombank.svg",
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/seo/techcombank_logo_svg_86201e50d1.svg",
+    "status": 200,
+    "type": "image/svg+xml",
+    "bytes": 4183
+  },
+  {
+    "file": "ab-inbev.png",
+    "url": "https://brandworld.ab-inbev.com/sites/g/files/wnfebl3996/files/Style%20Guide/ABInBev.png",
+    "status": 200,
+    "type": "image/png",
+    "bytes": 2348
+  },
+  {
+    "file": "carlsberg.png",
+    "url": "https://www.carlsberggroup.com/media/lpzj40jb/carlsberg-group_rgb.png",
+    "status": 200,
+    "type": "image/png",
+    "bytes": 36298
+  },
+  {
+    "file": "hennessy.png",
+    "url": "https://www.hennessy.com/themes/custom/hennessy/assets/images/logo-hennessy.png",
+    "status": 200,
+    "type": "image/png",
+    "bytes": 4044
+  },
+  {
+    "file": "vinamilk.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Vinamilk_new_logo.svg",
+    "status": 200,
+    "type": "image/svg+xml",
+    "bytes": 8239,
+    "attribution": "Vinamilk, official 2023 wordmark mirrored by Wikimedia Commons; PD-textlogo. https://commons.wikimedia.org/wiki/File:Vinamilk_new_logo.svg"
+  },
+  {
+    "file": "pepsico.png",
+    "url": "https://digitalassets.pepsico.com/transform/7c417867-1251-4602-8b69-1ea452a03bbe/Pepsico-logo-footer?q=95&w=800",
+    "status": 200,
+    "type": "image/png",
+    "bytes": 42670
+  },
+  {
+    "file": "samsung.svg",
+    "source": "https://www.samsung.com/uk/about-us/brand-identity/logo/",
+    "note": "Official header lettermark paths, SVG geometry unchanged."
+  },
+  {
+    "file": "coop.svg",
+    "source": "https://github.com/coopdigital/coop-frontend-toolkit",
+    "download": "https://registry.npmjs.org/coop-frontend-toolkit/-/coop-frontend-toolkit-2.1.4.tgz",
+    "note": "Official Co-op Digital toolkit asset, unchanged."
+  },
+  {
+    "file": "../aigm.png",
+    "note": "Existing supplied AI General Manager brand asset retained."
+  },
+  {
+    "file": "aqua.png",
+    "url": "https://aquavietnam.com.vn/wp-content/themes/aqua-themes/assets/img/aqua-logo.png",
+    "bytes": 34608,
+    "type": "image/png"
+  },
+  {
+    "file": "tea-zero.png",
+    "url": "https://traxanhkhongdo.com.vn/wp-content/uploads/2016/11/logo-txkd-1.png",
+    "bytes": 24826,
+    "type": "image/png"
+  },
+  {
+    "file": "moc-chau.png",
+    "url": "https://www.mcmilk.com.vn/wp-content/uploads/2023/07/NEW-logo.png",
+    "bytes": 26070,
+    "type": "image/png"
+  },
+  {
+    "file": "castrol.svg",
+    "url": "https://www.castrol.com/apps/settings/wcm/designs/refresh/castrol/images/reignite/logo.svg",
+    "bytes": 3059,
+    "type": "image/svg+xml"
+  },
+  {
+    "file": "masan.png",
+    "url": "https://www.masangroup.com/wp-content/uploads/2025/11/logo-masan-2x.png",
+    "bytes": 1593,
+    "type": "image/png"
+  },
+  {
+    "file": "kplus.svg",
+    "url": "https://www.kplus.vn/logo-kplus.svg",
+    "bytes": 982,
+    "type": "image/svg+xml"
+  },
+  {
+    "file": "7up.png",
+    "url": "https://www.7up.com/images/Logo.png",
+    "bytes": 1147,
+    "type": "image/png"
+  },
+  {
+    "file": "servier.svg",
+    "url": "https://servier.com/",
+    "note": "Official website inline logo, geometry unchanged."
+  },
+  {
+    "file": "guinness.svg",
+    "url": "https://guinness.com/",
+    "note": "Official website inline logo, geometry unchanged."
+  },
+  {
+    "file": "becks-ice.webp",
+    "url": "https://m-n.associates/wp-content/uploads/2025/11/Becks_Web_Media_4-768x432.webp",
+    "bytes": 9718
+  },
+  {
+    "file": "suntory-pepsico.svg",
+    "url": "https://api.suntorypepsico.vn/assets/ce83900d-aad8-4d56-b0e4-4ee600c4a1fe",
+    "bytes": 14547
+  },
+  {
+    "file": "pepsi.svg",
+    "url": "https://cdn.worldvectorlogo.com/logos/pepsi.svg",
+    "bytes": 4429
+  },
+  {
+    "file": "mirinda.svg",
+    "url": "https://cdn.worldvectorlogo.com/logos/mirinda.svg",
+    "bytes": 20357
+  }
+]

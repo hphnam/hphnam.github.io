@@ -15,7 +15,9 @@
     const title=active.querySelector('h1')?.textContent.trim().replace(/\s+/g,' ');
     document.title=path==='/'?'Nam Hoang — AI Consultant':`${title} — Nam Hoang`;
     document.querySelectorAll('.site-header nav a,.mobile-nav a').forEach(a=>{
-      if(path.startsWith(a.getAttribute('href').slice(1)))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
+      const target=a.getAttribute('href').slice(1);
+      const isCase=path.startsWith('/case-study/')||document.querySelector(`.collection-grid .work-card[href="#${path}"]`);
+      if(path.startsWith(target)||(target==='/work'&&isCase))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
     });
     closeMenu();
     window.scrollTo({top:0,behavior:'instant'});

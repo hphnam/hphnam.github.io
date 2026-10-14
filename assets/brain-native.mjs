@@ -24,6 +24,7 @@ export function startBrain(root){
     all('.poster-model-table tbody tr').forEach((row,i)=>row.classList.toggle('brain-selected-row',i===selected));
   }
   function renderModels(){
+    if(retained&&!evidence.models[selected].retained[venue])selected=evidence.venues[venue].served;
     const v=evidence.venues[venue],rows=modelRows(venue,metric,sort,retained),max=Math.max(...evidence.models.map(m=>m.values[venue][metric]))*1.06;
     const chart=find('[data-model-chart]');chart.replaceChildren();
     for(const m of rows){

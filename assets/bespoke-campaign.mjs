@@ -18,7 +18,14 @@ export function startBespoke(root){
   films.forEach(video=>{
     const button=find(`[data-bespoke-native-play="${video.id}"]`);
     video.addEventListener('play',()=>{button.hidden=true;films.forEach(other=>{if(other!==video)other.pause();});});
+    const status=video.parentElement.querySelector('[data-bespoke-video-status]');
+    const failed=()=>{button.hidden=false;button.disabled=false;button.setAttribute('aria-label','Retry playing this metro film');if(status)status.hidden=false;};
     video.addEventListener('ended',()=>{button.hidden=false;});
+    video.addEventListener('pause',()=>{button.hidden=false;});
+    video.addEventListener('error',failed);
+    video.addEventListener('playing',()=>{button.disabled=false;if(status)status.hidden=true;});
+    video.addEventListener('waiting',()=>{if(status){status.textContent='Loading the film…';status.hidden=false;}});
+    video.addEventListener('error',()=>{if(status)status.textContent='Having trouble playing? Try again or watch the original Facebook film below.';});
   });
   root.addEventListener('click',event=>{
     const b=event.target.closest('button');if(!b||!root.contains(b))return;
@@ -33,7 +40,10 @@ export function startBespoke(root){
       const video=document.getElementById(b.dataset.bespokeNativePlay);
       if(video.ended)video.currentTime=0;
       // Play in this click's user gesture; there is no intermediate embed loader.
-      const playback=video.play();playback?.catch(()=>{b.hidden=false;});
+      if(video.error)video.load();
+      const status=video.parentElement.querySelector('[data-bespoke-video-status]');
+      if(status)status.hidden=true;
+      const playback=video.play();playback?.catch(()=>{b.hidden=false;if(status){status.textContent='Having trouble playing? Try again or watch the original Facebook film below.';status.hidden=false;}});
     }
   });
   all('[data-bespoke-scroll]').forEach(a=>a.addEventListener('click',event=>{event.preventDefault();document.getElementById(a.dataset.bespokeScroll)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}));

@@ -1,0 +1,53 @@
+/* One frame shared by every case thumbnail. */
+.work-card .work-thumbnail{--thumbnail-ratio:16/9;position:relative;display:block!important;box-sizing:border-box;width:100%;height:auto!important;min-height:0!important;max-height:none;aspect-ratio:var(--thumbnail-ratio)!important;padding:0!important;margin:0;border:0;border-radius:22px!important;overflow:hidden!important;isolation:isolate;container-type:inline-size}
+.work-thumbnail>img,.work-thumbnail>video{position:absolute;inset:0;display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;padding:0!important}
+.work-thumbnail.spill-thumbnail>img,.work-thumbnail.aqua-work-image>img{position:absolute;inset:0;object-fit:cover!important;object-position:50% 50%;padding:0!important}
+.work-thumbnail>.bespoke-thumb{object-fit:cover!important}
+.work-thumbnail .duty-thumb-title{font-size:clamp(24px,7.5cqw,58px)}.work-thumbnail .duty-thumb-copy{top:11%;gap:3cqw}.work-thumbnail .duty-thumb-foot{font-size:clamp(8px,1.8cqw,12px)}
+/* Seven AIs: a closer camera, a moving light, and campfire embers on hover. */
+.work-thumbnail.ww-work-cover>img{animation:none!important;transform:scale(1.025);transition:transform .8s cubic-bezier(.16,1,.3,1),filter .8s;filter:brightness(.95)}
+.work-card:is(:hover,:focus-visible) .work-thumbnail.ww-work-cover>img{transform:scale(1.11) translate(var(--thumb-x,0px),var(--thumb-y,0px))!important;filter:brightness(1.14)}
+.work-thumbnail.ww-work-cover>span:not(.ww-thumb-embers){font-size:clamp(27px,8.8cqw,58px);max-width:65%;top:11%;line-height:1.04;transition:translate .7s}
+.work-thumbnail.ww-work-cover>small{font-size:clamp(8px,1.85cqw,12px)}
+.ww-thumb-glow{position:absolute;left:41%;top:41%;width:45%;height:60%;border-radius:50%;background:radial-gradient(ellipse,#f4b96850,transparent 68%);z-index:1;pointer-events:none;opacity:.2;transition:opacity .8s,transform .8s}
+.work-card:is(:hover,:focus-visible) .ww-thumb-glow{opacity:.9;transform:scale(1.14)}
+.ww-thumb-sweep{position:absolute;inset:-40%;background:linear-gradient(120deg,transparent 43%,#aae9c619 50%,transparent 57%);z-index:1;pointer-events:none;opacity:0;transform:translateX(-50%)}
+.work-card:is(:hover,:focus-visible) .ww-thumb-sweep{opacity:1;animation:ww-thumb-scan 3.8s ease-in-out infinite}
+.work-thumbnail.ww-work-cover>.ww-thumb-embers{position:absolute;inset:0;max-width:none;z-index:2;pointer-events:none}
+.ww-thumb-embers i{position:absolute;left:63%;top:76%;height:3px;width:3px;background:#f2c77b;box-shadow:0 0 5px #f2c77b;border-radius:50%;opacity:0;--ember-x:0px;--ember-delay:0s}
+.ww-thumb-embers i:nth-child(2){left:67%;--ember-x:12px;--ember-delay:.6s}.ww-thumb-embers i:nth-child(3){left:60%;--ember-x:-13px;--ember-delay:1.1s}.ww-thumb-embers i:nth-child(4){left:69%;--ember-x:9px;--ember-delay:1.7s}.ww-thumb-embers i:nth-child(5){left:64%;--ember-x:-9px;--ember-delay:2.3s}
+.work-card:is(:hover,:focus-visible) .ww-thumb-embers i{animation:ww-thumb-ember 3s var(--ember-delay) ease-out infinite}
+@keyframes ww-thumb-scan{0%,100%{transform:translateX(-50%);opacity:0}35%,65%{opacity:1}85%{transform:translateX(50%);opacity:0}}
+@keyframes ww-thumb-ember{0%{opacity:0;transform:translate(0,0) scale(.5)}20%{opacity:.85}100%{opacity:0;transform:translate(var(--ember-x),-90px) scale(.2)}}
+/* Financial research: a signal moving through a symbolic neural network. */
+.work-thumbnail.market-signal-thumb{background:radial-gradient(ellipse at 75% 52%,#1d3c73,#101e35 68%)!important;color:#f4f5f8;text-align:left}
+.market-signal-thumb .market-thumb-art{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:1;transition:transform 1s cubic-bezier(.16,1,.3,1);overflow:hidden}
+.market-signal-thumb .market-thumb-grid path{stroke:#819ed61a;stroke-width:1;fill:none}
+.market-signal-thumb .market-thumb-links path{stroke:#7097e342;stroke-width:1.2;fill:none;transition:stroke .7s}
+.market-signal-thumb .market-thumb-nodes circle{fill:#89adf4;stroke:#131f37;stroke-width:3;transition:fill .6s;filter:drop-shadow(0 0 4px #467ce5)}
+.market-signal-thumb .market-thumb-nodes .market-thumb-node-gold{fill:#ddbd86;filter:drop-shadow(0 0 5px #d2a85f)}
+.market-signal-thumb .market-thumb-active{stroke:#efd099;stroke-width:2.4;fill:none;stroke-dasharray:8 92;stroke-dashoffset:100;opacity:.6}
+.market-signal-thumb .market-thumb-wave{stroke:url(#market-thumb-line);stroke-width:2.8;fill:none;opacity:.75;stroke-linecap:round;stroke-linejoin:round}
+.market-signal-thumb .market-thumb-trace{stroke:#e5c38a;stroke-width:4;stroke-dasharray:8 92;stroke-dashoffset:100;opacity:0}
+.market-signal-thumb .market-thumb-output{fill:none;stroke:#e7c892;stroke-width:1.5;opacity:.45;transform-origin:652px 207px}
+.market-signal-thumb .market-thumb-prediction{stroke:#e5c38a;stroke-width:2;stroke-dasharray:4 5;opacity:.6;fill:none}
+.market-signal-thumb .market-thumb-copy{position:absolute;top:11%;left:7%;width:48%;z-index:2}
+.market-signal-thumb .market-thumb-copy>span{font:500 clamp(8px,1.85cqw,12px)/1.5 var(--body);color:#b8c9eb;letter-spacing:.09em;display:block}
+.market-signal-thumb .market-thumb-copy>strong{font:650 clamp(29px,9.3cqw,67px)/1.03 var(--display);display:block;margin-top:6cqw;letter-spacing:-.055em;color:#fff}
+.market-signal-thumb .market-thumb-copy>strong em{color:#e6c78f;font-style:normal}
+.market-signal-thumb .market-thumb-footer{position:absolute;bottom:8%;left:7%;right:7%;display:flex;justify-content:space-between;gap:20px;align-items:end;z-index:2}
+.market-signal-thumb .market-thumb-footer>small{font:500 clamp(8px,1.75cqw,11px)/1.6 var(--body);letter-spacing:.04em;color:#bdcbea}
+.market-signal-thumb .market-thumb-read{font:500 clamp(7px,1.55cqw,10px)/1.5 var(--body);color:#d6bb85;text-align:right;letter-spacing:.025em}
+.work-card:is(:hover,:focus-visible) .market-thumb-art{transform:scale(1.03) translate(var(--thumb-x,0px),var(--thumb-y,0px))}
+.work-card:is(:hover,:focus-visible) .market-thumb-links path{stroke:#83b0ff80}
+.work-card:is(:hover,:focus-visible) .market-thumb-active{animation:market-thumb-flow 2.6s linear infinite;opacity:1}
+.work-card:is(:hover,:focus-visible) .market-thumb-trace{animation:market-thumb-flow 4s linear infinite;opacity:1}
+.work-card:is(:hover,:focus-visible) .market-thumb-output{animation:market-thumb-ring 2.6s ease-out infinite}
+@keyframes market-thumb-flow{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes market-thumb-ring{0%{transform:scale(.65);opacity:.2}45%{opacity:.7}100%{transform:scale(1.6);opacity:0}}
+@media(max-width:560px){.work-card .work-thumbnail{border-radius:18px!important}.work-thumbnail .duty-thumb-copy{gap:3cqw}.market-signal-thumb .market-thumb-footer{gap:10px}}
+.motion-paused .work-thumbnail.ww-work-cover>img,.motion-paused .market-thumb-art{transform:none!important}.motion-paused :is(.ww-thumb-sweep,.ww-thumb-embers i,.market-thumb-active,.market-thumb-trace,.market-thumb-output){animation:none!important}.motion-paused .ww-thumb-glow{transition:none!important;transform:none!important}
+@media(prefers-reduced-motion:reduce){.work-thumbnail.ww-work-cover>img,.market-signal-thumb .market-thumb-art{transform:none!important;transition:none!important}.ww-thumb-glow{transition:none!important;transform:none!important}.ww-thumb-sweep,.ww-thumb-embers,.market-thumb-trace{display:none!important}.market-thumb-active,.market-thumb-output{animation:none!important}.market-thumb-links path,.market-thumb-nodes circle{transition:none!important}}
+
+body.motion-paused .work-card:is(:hover,:focus-visible) .work-thumbnail.ww-work-cover>img,body.motion-paused .work-card:is(:hover,:focus-visible) .market-thumb-art{transform:none!important}
+@media(prefers-reduced-motion:reduce){.work-card:is(:hover,:focus-visible) .work-thumbnail.ww-work-cover>img,.work-card:is(:hover,:focus-visible) .market-thumb-art{transform:none!important;transition:none!important}}
