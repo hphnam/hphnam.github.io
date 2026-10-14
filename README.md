@@ -1,42 +1,43 @@
-# Nam Hoang portfolio — GitHub Pages package
+# Nam Hoang — GitHub Pages upload package
 
-This folder is the complete working static website. No build, npm install, API key or backend is required.
+Latest fixed portfolio, exported 14 October 2026.
 
-## Upload using GitHub Desktop (recommended for this many files)
-1. Clone `hphnam/hphnam.github.io` in GitHub Desktop.
-2. Back up your existing checkout. Replace its website files with the CONTENTS of this extracted folder. Keep the repository's `.git` folder.
-3. Make sure `index.html`, `.nojekyll`, `assets/` and `media/` are at the repository root, not inside another folder.
-4. Commit with “Update optimized portfolio” and push to origin.
-5. In repository Settings → Pages, select “Deploy from a branch”, branch `main`, folder `/ (root)` and Save.
-6. Wait for the Pages deployment to finish. Open https://hphnam.github.io/ and refresh once. Test on your phone too.
+## Update hphnam.github.io
 
-Alternatively, use GitHub's Add file → Upload files. Upload the extracted files/folders, not the ZIP. Because there are more than 100 files, split uploads into several batches while retaining folder paths. A GitHub Desktop upload is easier.
+1. Extract this ZIP. `index.html`, `assets` and `media` sit directly at its root.
+2. Open your `hphnam.github.io` checkout in GitHub Desktop and use **Show in Finder** / **Show in Explorer**.
+3. Replace the existing `index.html`, `assets` and `media` with the copies from this package. Copy the other package files too. Preserve your existing `.git` folder, `.github` workflows and any `CNAME` file.
+4. Review the changes in GitHub Desktop, commit and push to the branch your existing Pages workflow publishes (currently `main`).
+5. Wait for the existing GitHub Pages deployment to finish. Open `https://hphnam.github.io/?v=20261014-fixed#/` to load the new page.
 
-Internal routes use URL hashes, so opening and refreshing case links works on GitHub Pages without server redirects. All local file paths are relative, so the package also works in a repository subfolder.
+Keep `index.html` at the repository root; do not upload the ZIP itself or put the website inside another folder. Your existing Pages settings and deployment workflow can remain in place.
 
-The package preserves the current case studies, controls, contact links, animations and existing public report/source downloads. Third-party video/social services still need an internet connection.
+## What is included
 
-## Implemented performance changes
-- WebP artwork, retaining the opening screen's original 1536 × 1024 resolution and fixed 3:2 proportions.
-- Smaller latch/decorative artwork sized for their actual display dimensions.
-- First entrance image preloaded with high priority.
-- One compact stylesheet in the original cascade order.
-- Font files are separate and use font-display: swap. Only required font faces are downloaded.
-- Case controllers load on opening each case, once per session.
-- Images and posters from other routes wait until those routes open.
-- Native videos use preload=none; homepage previews and case hero films still start muted when visible.
-- Supporting MV/social embeds load near their own sections; players are removed when their routes close.
-- The five-second decorative video uses 1080p H.264 with fast-start metadata and no unused audio track.
-- Unused artwork versions and superseded media are omitted from the upload folder.
+All current page content, fonts, artwork, videos, published download assets and case controllers. The skill bubbles, About and Credentials styles are included in the compiled stylesheet, whose linked URL is versioned by its content hash. The original Home order, services, case palettes, opening screen and media behaviour are retained.
 
-Do not add a service worker just to cache this site: stale versions can confuse recruiters after updates. Do not preload all case images/videos. Keep new images in WebP and supply thumbnails for videos.
+Heavy case content remains deferred. Local media needs an HTTP server for reliable preview; opening `index.html` directly as a file can prevent JavaScript modules from loading.
 
-## Verify real loading time after deployment
-Use Chrome DevTools → Lighthouse → Mobile, or https://pagespeed.web.dev/ with https://hphnam.github.io/. Test in a private window and with mobile throttling. Check both homepage and a video case. Target LCP ≤ 2.5s and CLS ≤ 0.1; results depend on device, network and third-party players. No Lighthouse score or measured loading-time claim was made for this export.
+## Preview locally (optional)
 
-References: https://web.dev/articles/optimize-lcp ; https://web.dev/articles/embed-best-practices ; https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+From the extracted folder, run:
 
-Measured file sizes (decimal MB, before HTTP compression):
-- Opening screen + latch: 4.49 MB → 0.63 MB.
-- Render-blocking font CSS: 1.30 MB → 0.015 MB (font bytes now loaded separately as needed).
-- Decorative video: 13.38 MB → 0.77 MB.
+```sh
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+## If you later edit CSS
+
+Edit the relevant source stylesheet in `assets`, then run:
+
+```sh
+node maintenance/rebuild-styles.mjs
+```
+
+The helper rebuilds `assets/portfolio.css` in the original cascade order and updates the versioned link in `index.html`. Add new source stylesheets to its ordered list first. It rejects omitted CSS files so styling cannot silently disappear from the export.
+
+## Export validation
+
+Checked: complete ZIP integrity; local HTML/CSS asset paths; dynamic controller files; stylesheet version matching; all 33 source styles included; deployment-ready root layout. Live browser rendering and playback still require a check on GitHub after deployment.

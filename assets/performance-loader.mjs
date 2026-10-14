@@ -1,5 +1,6 @@
 // Case controllers are requested only when a visitor opens the relevant page.
 export const routeModules = {
+ '/':['service-skill-bubbles.mjs'],
  '/case-study/cs-the-proactive-brain':['brain-native.mjs','case-mechanisms.mjs'],
  '/case-study/cs-what-a-croissant-taught-a-model':['coop-native.mjs','case-mechanisms.mjs'],
  '/case-study/cs-beauty-now':['bespoke-campaign.mjs','animated-kv.js'],
@@ -9,7 +10,7 @@ export const routeModules = {
  '/work/directing-a-camera-that-isnt-there':['camera-lab.mjs'],
  '/work/stop-heatdumping':['aqua-case.mjs','aqua-enrichment.mjs'],
  '/work/can-a-neural-net-read-a-market':['market-research.mjs'],
- '/about':['about-profile.mjs']
+ '/about':['about-profile.mjs','career-explorer.mjs']
 };
 export function startPerformanceLoading(doc=document,view=window,importer=name=>import('./'+name)){
  const loaded=new Map();
