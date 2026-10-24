@@ -10,6 +10,8 @@ export const routeModules = {
  '/work/directing-a-camera-that-isnt-there':['camera-lab.mjs'],
  '/work/stop-heatdumping':['aqua-case.mjs','aqua-enrichment.mjs'],
  '/work/can-a-neural-net-read-a-market':['market-research.mjs'],
+ '/work/a-feature-space-worth-99-87':['feature-space.mjs'],
+ '/work/respecting-the-source':['freshness-case.mjs?v=20261023-visual'],
  '/about':['about-profile.mjs','career-explorer.mjs']
 };
 export function startPerformanceLoading(doc=document,view=window,importer=name=>import('./'+name)){

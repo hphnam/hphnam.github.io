@@ -1,0 +1,5 @@
+Dataset,Model,Optimal_K,Silhouette,DBI,Purity,ARI
+Cats_vs_Dogs,DinoV2,11,0.0831,3.0804,0.9971,0.2106
+Cats_vs_Dogs,ResNet50,2,0.1356,2.4287,0.9797,0.9204
+iROADS,DinoV2,7,0.3873,1.2255,0.9085,0.8994
+iROADS,ResNet50,7,0.3509,1.2359,0.9596,0.9239
