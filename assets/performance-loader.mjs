@@ -3,7 +3,7 @@ export const routeModules = {
  '/':['service-skill-bubbles.mjs'],
  '/case-study/cs-the-proactive-brain':['brain-native.mjs','case-mechanisms.mjs'],
  '/case-study/cs-what-a-croissant-taught-a-model':['coop-native.mjs','case-mechanisms.mjs'],
- '/case-study/cs-beauty-now':['bespoke-campaign.mjs','animated-kv.js'],
+ '/case-study/cs-beauty-now':['bespoke-campaign.mjs'],
  '/case-study/cs-let-them-spill-it':['spill-campaign.js'],
  '/work/the-beer-wrote-the-brief':['becks-summer.mjs','becks-social.mjs'],
  '/work/coaching-smaller-models':['werewolf-case.mjs','werewolf-engine.mjs'],
