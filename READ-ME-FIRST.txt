@@ -1,37 +1,16 @@
-GITHUB PAGES UPDATE — CHANGED FILES ONLY
-24 October 2026
+BEAUTY, NOW — THUMBNAIL AUTOPLAY FIX
 
-For hphnam/hphnam.github.io, main branch.
-Compared with GitHub commit c7d2fb5b1fd0d5bdf543918bad116743d928e91d.
-Includes the latest published portfolio (version 64).
+This patch contains only two replacement files:
+  index.html
+  assets/performance-loader.mjs
 
-WHAT IS INCLUDED
-73 new files and 8 replacement files. The 293 unchanged site files
-are excluded. This includes the ML case, About refinements, the Samsung
-Freshness visual case, both Vimeo TVCs and the campaign sound changes.
-No files need deleting. Existing media and other unchanged files stay in place.
+Apply it after the previous 24 October portfolio update.
+The current GitHub index was verified to match that update.
 
-UPDATE THROUGH THE GITHUB WEBSITE
-1. Extract this ZIP on your computer.
-2. Open hphnam/hphnam.github.io on GitHub, on the main branch.
-3. Choose Add file > Upload files.
-4. Drag the CONTENTS of the UPDATE folder (index.html, assets and maintenance)
-   into the upload area. Do not upload the ZIP or the UPDATE folder itself.
-5. Commit the changes. The existing GitHub Pages deployment will update.
+Extract the ZIP. Upload the CONTENTS of UPDATE into the root of
+hphnam/hphnam.github.io, replacing the two matching files. Keep all other files.
+Commit the changes and let GitHub Pages redeploy. No settings change is needed.
 
-IF YOU USE A LOCAL CHECKOUT
-Copy the contents of UPDATE into the repository root. Merge the assets and
-maintenance folders and replace matching files. Keep all other existing files.
-Commit and push the resulting changes to main.
-
-The new index.html must replace the existing root index.html. Do not create a
-second page or add a ?v= parameter to your website URL. Your website remains:
-https://hphnam.github.io/
-
-No build or GitHub Pages settings change is required. The package already
-contains the compiled, versioned stylesheet. The maintenance helper is included
-only to preserve future stylesheet rebuilds; you do not need to run it now.
-The change manifest is for reference and does not need uploading.
-
-Browser autoplay rules can require a tap for sound on a first visit. The films
-request sound by default and provide a visible sound control.
+The thumbnail playback controller is now loaded on the first page visit,
+so the animation starts when the card enters view. Opening the case study
+first is no longer required. Hidden/offscreen thumbnails remain paused.
